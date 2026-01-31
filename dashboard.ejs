@@ -1,0 +1,16 @@
+<h2>Dashboard</h2>
+
+<a href="/create">Create Blog</a>
+<a href="/auth/logout">Logout</a>
+
+<ul>
+  <% blogs.forEach(blog => { %>
+
+    <li>
+      <a href="/blog/<%= blog.slug %>">
+        <%= blog.title %>
+      </a>
+    </li>
+
+  <% }) %>
+</ul>
